@@ -1,0 +1,261 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #08020f, #04080f);
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #f7f0f0;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+.container:hover {
+  transform: scale(1.05); /* Zoom effect */
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly brighter on hover */
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #0a0909;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+.nav-links a:hover {
+  background: #575757;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: auto;
+  padding: 20px;
+}
+
+/* Section Styling */
+.section {
+  padding: 40px 0;
+}
+
+h2 {
+  color: #4ed1db;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p, li {
+  margin: 10px 0;
+}
+
+.services-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-item, .project-item {
+  background: #fff;
+  padding: 20px;
+  color: #0a0a0a;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Slow and smooth transition effect for hover */
+.service-item {
+  background-color: #f0f0f0;
+  transition: transform 0.5s ease, background-color 0.5s ease; /* Increase duration here */
+}
+
+.service-item:hover {
+  transform: scale(1.1); /* Zoom effect */
+  background-color: #ffe0b2; /* Change to a soft color */
+}
+
+
+.service-item h3, .project-item h3 {
+  color: #7e2222;
+}
+
+/* Form Styling */
+form {
+  background: #fff;
+  padding: 20px;
+  color: #000;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6f61; /* Coral color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #e55c50; /* Darker coral on hover */
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  color: #bb1818;
+  text-decoration: none;
+}
+
+/* Animations */
+@keyframes moveRightToLeft {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.moving-text {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+  animation: moveRightToLeft 10s linear infinite;
+}
+
+.blinking-text {
+  color: red;
+  animation: blink 1s step-start infinite;
+}
+
+/* Example Usage */
+#about {
+  position: relative;
+}
+
+#about .moving-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+footer .blinking-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+.service-item,
+.project-item {
+    transition: transform 0.8s ease, background-color 0.8s ease;
+}
+
+.service-item,
+.project-item {
+    transition: transform 0.8s ease, background-color 0.8s ease;
+}
+
+.service-item:hover,
+.project-item:hover {
+    background-color: #afeea8;
+    transform: scale(1.05);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  font-size: large;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee p {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 20s linear infinite;
+}
+@keyframes scroll-left {
+  from {
+      transform: translateX(80%);
+  }
+  to {
+      transform: translateX(-80%);
+  }
+}
+@keyframes blinkInOut {
+  0%, 100% {
+      opacity: 0;
+      transform: scale(0.8); /* Shrinks slightly */
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.2); /* Grows slightly */
+  }
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #fefdf5; /* Coral color for standout text */
+  text-align: center;
+  animation: blinkInOut 2s infinite; /* 2 seconds loop */
+}

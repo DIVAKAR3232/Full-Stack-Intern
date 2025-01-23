@@ -1,0 +1,161 @@
+// JavaScript for slider controls<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="profile.js"></script> <!-- Linking JavaScript -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Divakar D</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="marquee">
+            <p>Welcome to my portfolio! Explore my projects, blogs, and more. Thank you visiting, want to work with me? Attach your mobile number, email, and tell me what service you need.</p>
+        </div>        
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Hello! I am Divakar D, a passionate developer with expertise in front-end and back-end web development, UI/UX design, mobile app development, and much more. I have worked on various projects that focus on creating visually appealing and functional solutions. My aim is to bridge the gap between user requirements and technical implementation effectively.</p>
+                <p>My skills include creating interactive designs, implementing modern technologies, and building applications that solve real-world problems. With a focus on creativity and user experience, I strive to deliver the best in all my endeavors.</p>
+                <p>Outside of work, I enjoy exploring new technologies, blogging about the latest trends in the tech world, and participating in hackathons to test my problem-solving skills. Collaborating with others and sharing knowledge is something I truly value.</p>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <h3>Front-End Development</h3>
+                        <p>Building responsive and interactive user interfaces using modern technologies like React, Angular, and Vue.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive and visually appealing user experiences for web and mobile applications.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Full-Stack Projects</h3>
+                        <p>Developing end-to-end solutions that integrate seamless front-end and robust back-end functionalities.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Mobile App Development</h3>
+                        <p>Creating user-friendly mobile applications for Android and iOS using Flutter, React Native, and Kotlin.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Social Media Marketing</h3>
+                        <p>Promoting businesses on platforms like Facebook, Instagram, and LinkedIn with strategic planning and execution.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>MS Office Solutions</h3>
+                        <p>Providing expertise in Word, Excel, PowerPoint, and Power BI for enhanced productivity and analysis.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Graphic Designing</h3>
+                        <p>Delivering creative designs to elevate brand identity and visual communication.</p>
+                    </div>
+                    <div class="service-item">
+                        <h3>Custom Solutions</h3>
+                        <p>Providing tailored technical solutions to meet specific business requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <h3>Project A</h3>
+                        <p>Developed a full-stack web application for managing online appointments, featuring real-time booking and user notifications.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project B</h3>
+                        <p>Created an e-commerce platform with an intuitive UI, secure payment gateway integration, and advanced search functionalities.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project C</h3>
+                        <p>Designed a mobile app for event management, including ticket booking, scheduling, and feedback collection.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project D</h3>
+                        <p>Implemented a data visualization dashboard using Power BI to analyze business performance and trends.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project E</h3>
+                        <p>Built a cloud-based document management system that ensures secure access and collaboration in real-time.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project F</h3>
+                        <p>Created a chatbot for customer support using AI and natural language processing, providing 24/7 assistance.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project G</h3>
+                        <p>Developed an educational platform with gamified learning experiences and progress tracking for students.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blogs" class="section">
+            <div class="container">
+                <h2>Blogs</h2>
+                <p>Stay tuned for insightful articles on technology, design, development, and career growth!</p>
+                <ul class="blog-list">
+                    <li><a href="#">How to Stay Ahead in Web Development Trends</a></li>
+                    <li><a href="#">Top 5 UI/UX Design Principles</a></li>
+                    <li><a href="#">Building Scalable Applications: Best Practices</a></li>
+                    <li><a href="#">The Future of Mobile App Development</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to discuss projects, collaboration, or just to say hi!</p>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Divakar D. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/divakar-d-568a73291/">LinkedIn</a></li>
+                <li><a href="https://github.com/DIVAKAR3232">GitHub</a></li>
+                <li><a href="https://www.instagram.com/divakar_duraisamy/">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
